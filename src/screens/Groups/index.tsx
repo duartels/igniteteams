@@ -1,9 +1,20 @@
-import { Text, View } from "react-native"
+import { GroupCard } from "@components/GroupCard"
+import { Header } from "@components/Header"
+import { Highlight } from "@components/Highlight"
+
+import { Container } from "./styles"
 
 export const Groups = () => {
   return (
-    <View>
-      <Text>Groups</Text>
-    </View>
+    <Container>
+      <Header />
+
+      <Highlight 
+        title="Turmas"
+        subtitle="Jogue com a sua turma."
+      />
+
+      <GroupCard title="Turma 1" />
+    </Container>
   )
 }
